@@ -1,0 +1,339 @@
+<?xml version = "1.0"?>
+<settings>
+    <!-- Master volume for all music. Decimal between 0 and 1 -->
+    <volume>3</volume>
+
+    <!-- Should music loop? If not true, then another song is selected from scene matches -->
+    <loop>true</loop>
+
+    <!-- To have this plugin scan a different directory for music files,
+        Uncomment <music-path> below (remove <!- - and - -> from the line below) -->
+
+    <!-- <music-path>C:\Users\YourName\Music\SomeMusicFolder</music-path> -->
+
+    <!--
+        Here is where you define what songs are used in which scenes and if they are
+        "boss" music (played during teleporter events or not).
+
+        *****  If you just want to play with RoR1 music, you just need to make sure  *****
+        *****  your music filenames match EXACTLY with all name="" attributes below. *****
+
+        Here is an example of a file that will play on the title screen and other main menus:
+
+        <song
+            name="01 Risk of Rain.mp3"
+            scenes="title,lobby,logbook,crystalworld,eclipseworld"
+            boss="false"
+            volume="1"
+        />
+
+        "name" must match the file name exactly. Supported extensions are ".mp3" and ".wav" (case sensitive).
+
+        "scenes" are the comma separated scene IDs (or levels) that will have a chance to play this music.
+        See README.md for more info on scene IDs.
+
+        "boss" is if this music plays during a teleporter event or not (or during the final boss).
+        It's important to understand that when boss is true, the music ONLY plays during teleporter events
+        and when boss is false, the music ONLY plays when *NOT* during a teleporter event.
+
+        If you want music to play regardless of the teleporter charging, you must make two <song> definitions
+        with the same data but with one boss="true" and the other boss="false"
+
+        "volume" is a local volume decimal (between 0 and 1) that gets multiplied with the global volume tag.
+
+        You can have multiple <song> definitions with the same or similar data. If a scene matches multiple <song>'s
+        then this plugin will choose one randomly. If NO matches are found, then the plugin will choose a random
+        sound file it found in the plugin folder.
+    -->
+    <music>
+        <song
+            name="main.mp3"
+            scenes="splash"
+            boss="false"
+            volume="1"
+	/>
+        <song
+            name="main.mp3"
+            scenes="intro"
+            boss="false"
+            volume="1"
+	/>
+        <song
+            name="outro.mp3"
+            scenes="outro"
+            boss="false"
+            volume="1"
+	/>
+        <song
+            name="main.mp3"
+            scenes="loadingbasic"
+            boss="false"
+            volume="1"
+	/>
+        <song
+            name="main.mp3"
+            scenes="title"
+            boss="false"
+            volume="1"
+	/>
+        <song
+            name="main.mp3"
+            scenes="lobby"
+            boss="false"
+            volume="1"
+        />
+        <song
+            name="main.mp3"
+            scenes="logbook"
+            boss="false"
+            volume="1"
+        />
+        <song
+            name="main.mp3"
+            scenes="crystalworld"
+            boss="false"
+            volume="1"
+        />
+        <song
+            name="main.mp3"
+            scenes="eclipseworld"
+            boss="false"
+            volume="1"
+        />
+        <song
+            name="bazaar.mp3"
+            scenes="bazaar"
+            boss="false"
+            volume="1"
+        />
+        <song
+            name="stage1.mp3"
+            scenes="blackbeach"
+            boss="false"
+            volume="1"
+	/>
+        <song
+            name="boss1.mp3"
+            scenes="blackbeach"
+            boss="true"
+            volume="2"
+	/>
+        <song
+            name="stage1.mp3"
+            scenes="golemplains"
+            boss="false"
+            volume="1"
+	/>
+        <song
+            name="boss1.mp3"
+            scenes="golemplains"
+            boss="true"
+            volume="2"
+        />
+        <song
+            name="swamp.mp3"
+            scenes="foggyswamp"
+            boss="false"
+            volume="1"
+	/>
+        <song
+            name="swampboss.mp3"
+            scenes="foggyswamp"
+            boss="true"
+            volume="1"
+        />
+        <song
+            name="desert.mp3"
+            scenes="goolake"
+            boss="false"
+            volume="1"
+	/>
+        <song
+            name="desertboss.mp3"
+            scenes="goolake"
+            boss="true"
+            volume="1"
+        />
+        <song
+            name="ralley.mp3"
+            scenes="frozenwall"
+            boss="false"
+            volume="1"
+	/>
+        <song
+            name="ralleyboss.mp3"
+            scenes="frozenwall"
+            boss="true"
+            volume="1"
+        />
+        <song
+            name="acres.mp3"
+            scenes="wispgraveyard"
+            boss="false"
+            volume="1"
+	/>
+        <song
+            name="acresboss.mp3"
+            scenes="wispgraveyard"
+            boss="true"
+            volume="1"
+        />
+        <song
+            name="hell.mp3"
+            scenes="dampcavesimple"
+            boss="false"
+            volume="1"
+	/>
+        <song
+            name="hellboss.mp3"
+            scenes="dampcavesimple"
+            boss="true"
+            volume="1"
+        />
+        <song
+            name="siren.mp3"
+            scenes="shipgraveyard"
+            boss="false"
+            volume="1"
+	/>
+        <song
+            name="sirenboss.mp3"
+            scenes="shipgraveyard"
+            boss="true"
+            volume="1"
+        />
+        <song
+            name="stage1.mp3"
+            scenes="rootjungle"
+            boss="false"
+            volume="1"
+	/>
+        <song
+            name="swampboss.mp3"
+            scenes="rootjungle"
+            boss="true"
+            volume="1"
+        />
+        <song
+            name="skymeadow.mp3"
+            scenes="skymeadow"
+            boss="false"
+            volume="1"
+	/>
+        <song
+            name="skyboss.mp3"
+            scenes="skymeadow"
+            boss="true"
+            volume="1"
+
+        />
+        <song
+            name="skyboss.mp3"
+            scenes="skymeadow"
+            boss="true"
+            volume="1"
+        />
+        <song
+            name="moon.mp3"
+            scenes="moon"
+            boss="false"
+            volume="1"
+	/>
+        <song
+            name="final_phase1.mp3"
+            scenes="moon"
+            boss="true"
+            volume="1"
+        />
+        <song
+            name="final_phase2.mp3"
+            scenes="moon"
+            boss="true"
+            volume="1"
+	/>
+        <song
+            name="winter.mp3"
+            scenes="snowyforest"
+            boss="false"
+            volume="1"
+	/>
+        <song
+            name="winterboss.mp3"
+            scenes="snowyforest"
+            boss="true"
+            volume="1"
+	/>
+        <song
+            name="siren.mp3"
+            scenes="ancientloft"
+            boss="false"
+            volume="1"
+	/>
+        <song
+            name="boss1.mp3"
+            scenes="ancientloft"
+            boss="true"
+            volume="2"
+	/>
+        <song
+            name="sulfur.mp3"
+            scenes="sulfurpools"
+            boss="false"
+            volume="1"
+	/>
+        <song
+            name="sulfurboss.mp3"
+            scenes="sulfurpools"
+            boss="true"
+            volume="1"
+	/>
+        <song
+            name="final_phase2.mp3"
+            scenes="voidraid"
+            boss="false"
+            volume="1"
+	/>
+        <song
+            name="captured.mp3"
+            scenes="voidraid"
+            boss="true"
+            volume="1"
+	/>
+        <song
+            name="captured.mp3"
+            scenes="voidstage"
+            boss="true"
+            volume="1"
+        />
+        <song
+            name="closure.mp3"
+            scenes="artifactworld"
+            boss="false"
+            volume="1"
+        />
+        <song
+            name="closure.mp3"
+            scenes="arena"
+            boss="false"
+            volume="1"
+        />
+        <song
+            name="mysteryspace.mp3"
+            scenes="mysteryspace"
+            boss="true"
+            volume="1"
+        />
+        <song
+            name="mysteryspace.mp3"
+            scenes="limbo"
+            boss="false"
+            volume="1"
+        />
+        <song
+            name="siren.mp3"
+            scenes="goldshores"
+            boss="false"
+            volume="1"
+        />
+    </music>
+</settings>
